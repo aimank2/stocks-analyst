@@ -55,38 +55,59 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
   symbolActiveColor: "rgba(15, 237, 190, 0.05)", // highlight color for active symbol
   tabs: [
     {
-      title: "Financial",
+      title: "Top Cryptos",
       symbols: [
-        { s: "NYSE:JPM", d: "JPMorgan Chase" },
-        { s: "NYSE:WFC", d: "Wells Fargo Co New" },
-        { s: "NYSE:BAC", d: "Bank Amer Corp" },
-        { s: "NYSE:HSBC", d: "Hsbc Hldgs Plc" },
-        { s: "NYSE:C", d: "Citigroup Inc" },
-        { s: "NYSE:MA", d: "Mastercard Incorporated" },
+        { s: "BINANCE:BTCUSDT", d: "Bitcoin" },
+        { s: "BINANCE:ETHUSDT", d: "Ethereum" },
+        { s: "BINANCE:BNBUSDT", d: "BNB" },
+        { s: "BINANCE:SOLUSDT", d: "Solana" },
+        { s: "BINANCE:XRPUSDT", d: "XRP" },
+        { s: "BINANCE:ADAUSDT", d: "Cardano" },
       ],
     },
     {
-      title: "Technology",
+      title: "DeFi & Layer 2",
       symbols: [
-        { s: "NASDAQ:AAPL", d: "Apple" },
-        { s: "NASDAQ:GOOGL", d: "Alphabet" },
-        { s: "NASDAQ:MSFT", d: "Microsoft" },
-        { s: "NASDAQ:FB", d: "Meta Platforms" },
-        { s: "NYSE:ORCL", d: "Oracle Corp" },
-        { s: "NASDAQ:INTC", d: "Intel Corp" },
+        { s: "BINANCE:UNIUSDT", d: "Uniswap" },
+        { s: "BINANCE:AAVEUSDT", d: "Aave" },
+        { s: "BINANCE:MATICUSDT", d: "Polygon" },
+        { s: "BINANCE:OPUSDT", d: "Optimism" },
+        { s: "BINANCE:ARBUSDT", d: "Arbitrum" },
+        { s: "BINANCE:SNXUSDT", d: "Synthetix" },
       ],
     },
     {
-      title: "Services",
+      title: "Metaverse & Web3",
       symbols: [
-        { s: "NASDAQ:AMZN", d: "Amazon" },
-        { s: "NYSE:BABA", d: "Alibaba Group Hldg Ltd" },
-        { s: "NYSE:T", d: "At&t Inc" },
-        { s: "NYSE:WMT", d: "Walmart" },
-        { s: "NYSE:V", d: "Visa" },
+        { s: "BINANCE:MANAUSDT", d: "Decentraland" },
+        { s: "BINANCE:SANDUSDT", d: "The Sandbox" },
+        { s: "BINANCE:AXSUSDT", d: "Axie Infinity" },
+        { s: "BINANCE:GALAUSDT", d: "Gala" },
+        { s: "BINANCE:APEUSDT", d: "ApeCoin" },
+      ],
+    },
+    {
+      title: "Stablecoins",
+      symbols: [
+        { s: "CRYPTOCAP:USDT", d: "Tether (USDT)" },
+        { s: "CRYPTOCAP:USDC", d: "USD Coin (USDC)" },
+        { s: "CRYPTOCAP:DAI", d: "Dai (DAI)" },
+        { s: "CRYPTOCAP:TUSD", d: "TrueUSD (TUSD)" },
+        { s: "CRYPTOCAP:FDUSD", d: "First Digital USD (FDUSD)" },
+      ],
+    },
+    {
+      title: "Meme Coins",
+      symbols: [
+        { s: "BINANCE:DOGEUSDT", d: "Dogecoin" },
+        { s: "BINANCE:SHIBUSDT", d: "Shiba Inu" },
+        { s: "BINANCE:PEPEUSDT", d: "Pepe" },
+        { s: "BINANCE:FLOKIUSDT", d: "Floki" },
+        { s: "BINANCE:BONKUSDT", d: "Bonk" },
       ],
     },
   ],
+
   support_host: "https://www.tradingview.com", // TradingView host
   backgroundColor: "#141414", // background color
   width: "100%", // full width
