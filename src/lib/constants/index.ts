@@ -55,38 +55,59 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
   symbolActiveColor: "rgba(15, 237, 190, 0.05)", // highlight color for active symbol
   tabs: [
     {
-      title: "Financial",
+      title: "Top Cryptos",
       symbols: [
-        { s: "NYSE:JPM", d: "JPMorgan Chase" },
-        { s: "NYSE:WFC", d: "Wells Fargo Co New" },
-        { s: "NYSE:BAC", d: "Bank Amer Corp" },
-        { s: "NYSE:HSBC", d: "Hsbc Hldgs Plc" },
-        { s: "NYSE:C", d: "Citigroup Inc" },
-        { s: "NYSE:MA", d: "Mastercard Incorporated" },
+        { s: "BINANCE:BTCUSDT", d: "Bitcoin" },
+        { s: "BINANCE:ETHUSDT", d: "Ethereum" },
+        { s: "BINANCE:BNBUSDT", d: "BNB" },
+        { s: "BINANCE:SOLUSDT", d: "Solana" },
+        { s: "BINANCE:XRPUSDT", d: "XRP" },
+        { s: "BINANCE:ADAUSDT", d: "Cardano" },
       ],
     },
     {
-      title: "Technology",
+      title: "DeFi & Layer 2",
       symbols: [
-        { s: "NASDAQ:AAPL", d: "Apple" },
-        { s: "NASDAQ:GOOGL", d: "Alphabet" },
-        { s: "NASDAQ:MSFT", d: "Microsoft" },
-        { s: "NASDAQ:FB", d: "Meta Platforms" },
-        { s: "NYSE:ORCL", d: "Oracle Corp" },
-        { s: "NASDAQ:INTC", d: "Intel Corp" },
+        { s: "BINANCE:UNIUSDT", d: "Uniswap" },
+        { s: "BINANCE:AAVEUSDT", d: "Aave" },
+        { s: "BINANCE:MATICUSDT", d: "Polygon" },
+        { s: "BINANCE:OPUSDT", d: "Optimism" },
+        { s: "BINANCE:ARBUSDT", d: "Arbitrum" },
+        { s: "BINANCE:SNXUSDT", d: "Synthetix" },
       ],
     },
     {
-      title: "Services",
+      title: "Metaverse & Web3",
       symbols: [
-        { s: "NASDAQ:AMZN", d: "Amazon" },
-        { s: "NYSE:BABA", d: "Alibaba Group Hldg Ltd" },
-        { s: "NYSE:T", d: "At&t Inc" },
-        { s: "NYSE:WMT", d: "Walmart" },
-        { s: "NYSE:V", d: "Visa" },
+        { s: "BINANCE:MANAUSDT", d: "Decentraland" },
+        { s: "BINANCE:SANDUSDT", d: "The Sandbox" },
+        { s: "BINANCE:AXSUSDT", d: "Axie Infinity" },
+        { s: "BINANCE:GALAUSDT", d: "Gala" },
+        { s: "BINANCE:APEUSDT", d: "ApeCoin" },
+      ],
+    },
+    {
+      title: "Stablecoins",
+      symbols: [
+        { s: "CRYPTOCAP:USDT", d: "Tether (USDT)" },
+        { s: "CRYPTOCAP:USDC", d: "USD Coin (USDC)" },
+        { s: "CRYPTOCAP:DAI", d: "Dai (DAI)" },
+        { s: "CRYPTOCAP:TUSD", d: "TrueUSD (TUSD)" },
+        { s: "CRYPTOCAP:FDUSD", d: "First Digital USD (FDUSD)" },
+      ],
+    },
+    {
+      title: "Meme Coins",
+      symbols: [
+        { s: "BINANCE:DOGEUSDT", d: "Dogecoin" },
+        { s: "BINANCE:SHIBUSDT", d: "Shiba Inu" },
+        { s: "BINANCE:PEPEUSDT", d: "Pepe" },
+        { s: "BINANCE:FLOKIUSDT", d: "Floki" },
+        { s: "BINANCE:BONKUSDT", d: "Bonk" },
       ],
     },
   ],
+
   support_host: "https://www.tradingview.com", // TradingView host
   backgroundColor: "#141414", // background color
   width: "100%", // full width
@@ -96,7 +117,7 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
 };
 
 export const HEATMAP_WIDGET_CONFIG = {
-  dataSource: "SPX500",
+  dataSource: "CRYPTOCAP",
   blockSize: "market_cap_basic",
   blockColor: "change",
   grouping: "sector",
@@ -124,9 +145,17 @@ export const TOP_STORIES_WIDGET_CONFIG = {
   width: "100%",
   height: "600",
 };
+export const ECONOMIC_CALENDAR = {
+  colorTheme: "dark",
+  isTransparent: false,
+  locale: "en",
+  countryFilter: "cn,jp,ru,us,eu",
+  importanceFilter: "-1,0,1",
+  height: 600,
+};
 
 export const MARKET_DATA_WIDGET_CONFIG = {
-  title: "Stocks",
+  title: "Cryptocurrencies",
   width: "100%",
   height: 600,
   locale: "en",
@@ -136,35 +165,46 @@ export const MARKET_DATA_WIDGET_CONFIG = {
   backgroundColor: "#0F0F0F",
   symbolsGroups: [
     {
-      name: "Financial",
+      name: "Top Coins",
       symbols: [
-        { name: "NYSE:JPM", displayName: "JPMorgan Chase" },
-        { name: "NYSE:WFC", displayName: "Wells Fargo Co New" },
-        { name: "NYSE:BAC", displayName: "Bank Amer Corp" },
-        { name: "NYSE:HSBC", displayName: "Hsbc Hldgs Plc" },
-        { name: "NYSE:C", displayName: "Citigroup Inc" },
-        { name: "NYSE:MA", displayName: "Mastercard Incorporated" },
+        { name: "BINANCE:BTCUSDT", displayName: "Bitcoin" },
+        { name: "BINANCE:ETHUSDT", displayName: "Ethereum" },
+        { name: "BINANCE:BNBUSDT", displayName: "BNB" },
+        { name: "BINANCE:SOLUSDT", displayName: "Solana" },
+        { name: "BINANCE:XRPUSDT", displayName: "XRP" },
+        { name: "BINANCE:ADAUSDT", displayName: "Cardano" },
       ],
     },
     {
-      name: "Technology",
+      name: "DeFi & Layer 2",
       symbols: [
-        { name: "NASDAQ:AAPL", displayName: "Apple" },
-        { name: "NASDAQ:GOOGL", displayName: "Alphabet" },
-        { name: "NASDAQ:MSFT", displayName: "Microsoft" },
-        { name: "NASDAQ:FB", displayName: "Meta Platforms" },
-        { name: "NYSE:ORCL", displayName: "Oracle Corp" },
-        { name: "NASDAQ:INTC", displayName: "Intel Corp" },
+        { name: "BINANCE:UNIUSDT", displayName: "Uniswap" },
+        { name: "BINANCE:AAVEUSDT", displayName: "Aave" },
+        { name: "BINANCE:MATICUSDT", displayName: "Polygon" },
+        { name: "BINANCE:OPUSDT", displayName: "Optimism" },
+        { name: "BINANCE:ARBUSDT", displayName: "Arbitrum" },
+        { name: "BINANCE:SNXUSDT", displayName: "Synthetix" },
+      ],
+    },
+
+    {
+      name: "Stablecoins",
+      symbols: [
+        { name: "CRYPTOCAP:USDT", displayName: "Tether (USDT)" },
+        { name: "CRYPTOCAP:USDC", displayName: "USD Coin (USDC)" },
+        { name: "CRYPTOCAP:DAI", displayName: "Dai" },
+        { name: "CRYPTOCAP:TUSD", displayName: "TrueUSD" },
+        { name: "CRYPTOCAP:FDUSD", displayName: "First Digital USD" },
       ],
     },
     {
-      name: "Services",
+      name: "Meme Coins",
       symbols: [
-        { name: "NASDAQ:AMZN", displayName: "Amazon" },
-        { name: "NYSE:BABA", displayName: "Alibaba Group Hldg Ltd" },
-        { name: "NYSE:T", displayName: "At&t Inc" },
-        { name: "NYSE:WMT", displayName: "Walmart" },
-        { name: "NYSE:V", displayName: "Visa" },
+        { name: "BINANCE:DOGEUSDT", displayName: "Dogecoin" },
+        { name: "BINANCE:SHIBUSDT", displayName: "Shiba Inu" },
+        { name: "BINANCE:PEPEUSDT", displayName: "Pepe" },
+        { name: "BINANCE:FLOKIUSDT", displayName: "Floki" },
+        { name: "BINANCE:BONKUSDT", displayName: "Bonk" },
       ],
     },
   ],
